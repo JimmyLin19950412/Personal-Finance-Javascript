@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Stocks</title>
+</head>
+<script src="stocks.js"></script>
+<body onload="populateShares()">
+	<!-- table to hold data in -->
+	<table id="table" border="1px">
+		<!-- first row, holds the name of the companies -->
+		<tr>
+			<td>Name</td>
+			<td>Dividend Amount</td>
+			<td>Number of Shares</td>
+		</tr>
+		<!-- future tr holds information specific to each stock in question -->
+		<tr>
+			<td>GAIN</td>
+			<td id="GAINDividend"></td>
+			<td id="GAINShares"></td>
+		</tr>
+		<tr>
+			<td>O</td>
+			<td id="ODividend"></td>
+			<td id="OShares"></td>
+		</tr>
+		<tr>
+			<td>CSCO</td>
+			<td id="CSCODividend"></td>
+			<td id="CSCOShares"></td>
+		</tr>
+		<tr>
+			<td>F</td>
+			<td id="FDividend"></td>
+			<td id="FShares"></td>
+		</tr>
+		<tr>
+			<td>T</td>
+			<td id="TDividend"></td>
+			<td id="TShares"></td>
+		</tr>
+		<tr>
+			<td>BAC</td>
+			<td id="BACDividend"></td>
+			<td id="BACShares"></td>
+		</tr>
+	</table>
+</body>
+</html>
