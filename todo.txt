@@ -1,0 +1,9 @@
+auto refresh 15m
+show last refresh time
+graphs
+read from file
+auto generate table, rows, and columns as needed
+direct input shares and stocks
+save to file
+input amount invested
+show gains and losses
