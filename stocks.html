@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- refreshes page every 15min. 900 seconds = 15m -->
+	<meta http-equiv="refresh" content="900">
 	<title>Stocks</title>
 </head>
 <script src="stocks.js"></script>
-<body onload="populateShares()">
+<body onload="populateShares();currentTime()">
 	<!-- table to hold data in -->
 	<table id="table" border="1px">
 		<!-- first row, holds the name of the companies -->
@@ -66,5 +68,6 @@
 			<td id="BACPreviousDividend"></td>
 		</tr>
 	</table>
+	<h1 id="currentTime" ></h1>
 </body>
 </html>

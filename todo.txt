@@ -1,5 +1,4 @@
-auto refresh 15m
-show last refresh time
+show next refresh timer
 graphs
 read from file
 auto generate table, rows, and columns as needed

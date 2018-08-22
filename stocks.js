@@ -82,3 +82,40 @@ function calculateYearlyDividend() {
 	
 	
 }
+
+//displays current time
+function currentTime() {
+	//obtain current time
+	var time = new Date();
+	var seconds = time.getSeconds();
+	var minutes = time.getMinutes();
+	var hours = time.getHours();
+	var AmOrPm = "AM";
+	
+	//adds a 0 to seconds if seconds is less then 10
+	if(seconds < 10) {
+		seconds = "0" + seconds;
+	}
+	
+	//adds a 0 to minutes if minutes is less then 10
+	if(minutes < 10) {
+		minutes = "0" + minutes;
+	}
+	
+	//changes hours to 12 hour time with am and pm instead of default 24 hour time
+	//if hours is greater then 12 then it is PM and need to reduce hours by 12
+	if(hours >= 12) {
+		//changes to PM
+		AmOrPm = "PM";
+		
+		//reduce horus by 12 to make a 12 hour time
+		hours = hours - 12;
+	}
+	
+	//adds a 0 to hours if hours is less then 10
+	if(hours < 10) {
+		hours = "0" + hours;
+	}
+	
+document.getElementById("currentTime").innerHTML = "Last updated " + hours + ":" + minutes + ":" + seconds + " " + AmOrPm;
+}
