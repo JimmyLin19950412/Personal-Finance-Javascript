@@ -74,4 +74,11 @@ function calculateYearlyDividend() {
 	//.toPrecision(#) -> set to # of decimal places
 	
 	document.getElementById("GAINYearlyDividend").innerHTML = (APIData.GAIN["delayed-quote"].delayedPrice * (APIData.GAIN.stats.dividendYield / 100)).toFixed(3);
+	document.getElementById("OYearlyDividend").innerHTML = (APIData.GAIN["delayed-quote"].delayedPrice * (APIData.O.stats.dividendYield / 100)).toFixed(3);
+	document.getElementById("CSCOYearlyDividend").innerHTML = (APIData.GAIN["delayed-quote"].delayedPrice * (APIData.CSCO.stats.dividendYield / 100)).toFixed(3);
+	document.getElementById("FYearlyDividend").innerHTML = (APIData.GAIN["delayed-quote"].delayedPrice * (APIData.F.stats.dividendYield / 100)).toFixed(3);
+	document.getElementById("TYearlyDividend").innerHTML = (APIData.GAIN["delayed-quote"].delayedPrice * (APIData.T.stats.dividendYield / 100)).toFixed(3);
+	document.getElementById("BACYearlyDividend").innerHTML = (APIData.GAIN["delayed-quote"].delayedPrice * (APIData.BAC.stats.dividendYield / 100)).toFixed(3);
+	
+	
 }
